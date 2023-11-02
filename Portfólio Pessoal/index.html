@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Portfólio Pessoal: Quem sou</title>
+     <!--Inicio da tag style onde defino que trabalharei com GRID-->
+     <style>
+        body{margin: 0;}
+        .container{display: grid;}/*Determina que o sistema de crição de layout que será utilizado é o GRID*/ 
+        header{grid-column-start: 1;grid-column-end: 12;background-color:#8c8c8c; font-family: Verdana, Geneva, Tahoma, sans-serif }/*Define O inicio e fim do GRID do meu Titulo da Pagina*/
+        .menu{grid-column-start: 6;grid-column-end: 12;justify-content: center; gap: 20px;}/*Posição e alinhamento do Menu*/ 
+        .img1{grid-column-start: 1;grid-column-end: 2;}/*Posição e allinhamento da foto*/
+        ul{list-style-type: none;color: black;}/*lista não ordenada com os links */
+        li{float: left; color: black;}/*Aqui determino que minha lista será em linha e centralizada n cor preta*/
+        a:link{text-decoration: none;padding: 8px 30px; font-size: 22px;}/*Aqui retirei a decoração da lista*/
+        footer{grid-column-start: 1;grid-column-end: 12;background-color:#8c8c8c}/*Definição de como será meu rodapé*/
+        .info{margin: 7px; font-size: 18px; color: black;}/*Alinhamento e estilização das minhas informações pessoais*/
+        .sobremim{ grid-column-start: 6; /*Alinhamento e estilização do texto sebre mim*/
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-family:Arial;
+        }
+            /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            ul{grid-column-start: 1;grid-column-end: 1;margin: 0;list-style-type: disc;}
+            li{grid-column-start: 1; grid-column-end: 1;margin: 0;text-align: justify;}
+                       
+        }
+    </style>
+</head>
+    <body>  
+        <!-- Cabeçalho da Pagina-->  
+        <header class="container wrapper">
+            <h1 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">Curriculo Vitae<br> Online</h1>
+        </header>
+        <!--Menu feito com lista não ordenada e em linha-->
+        <nav class="container menu wrapper">
+            <ul>
+                <li><a href="index.html">Quem Sou</a></li>
+                <li><a href="index2.html">Formação</a></li>
+                <li><a href="index1.html">Portfólio</a></li>
+                <li><a href="index3.html">Contatos</a></li>
+            </ul>
+        </nav> 
+        <!--Criado uma div para definir que tudo que está nela faz parte do container-->
+        <div class="container wrapper">
+            <aside class="img1">
+                <img src="imagens/foto.jpg" width="240px" height="280px"> 
+                    <div class="info"> <!--informações pessoais -->
+                        <p><strong>Nome: </strong><br>Murilo Medeiros Ferreira</p>
+                        <p><strong>Sexo: </strong><br>Maculino</p>
+                        <p><strong>Data Nascimento:</strong><br>11/02/1988 (35 anos)</p> 
+                        <p><strong>Estado Civil:</strong><br> Casado</p>
+                        <p><strong>CEP:</strong><br>83050080 <br>São José dos Pinhais PR</p>
+                    </div>                                    
+            </aside>
+        <!-- Section é  area onde reservei para colocar o texto sobre inhas informações-->            
+        <section class="sobremim wrapper">
+            <h1>Minha Jornada de Crescimento Profissional e Pessoal</h1>
+                <p> Olá! Meu nome é <strong>Murilo</strong>, e estou entusiasmado para compartilhar um pouco sobre minha jornada até agora. <br> Sou casado e tenho 2 filhos, um menino de 13 anos e uma menina de 9 anos. Atualmente resido em São José dos Pinhais, PR, mas sou natural de Curitiba, PR.
+                </p>
+                <p>Desde cedo, sempre fui apaixonado pela área da tecnologia. Sempre tive muita curiosidade e a vontade de aprender, mas infelizmente só consegui comprar meu primeiro computador aos 28 anos de idade. Já havia me matriculado na faculdade antes, mas por não ter as ferramentas necessárias, tive que cancelar meus estudos. No ano de 2023, minha vida tomou um rumo totalmente diferente e novas oportunidades surgiram, onde mesmo sem conhecer ninguém da área de tecnologia, resolvi me matricular na faculdade de Análise e Desenvolvimento de Sistemas. Confesso que não tem sido fácil, mas estou mais dedicado do que nunca para alcançar esse objetivo de me tornar um desenvolvedor.</p>
+                <p>Além disso, em uma das empresas que já trabalhei, tive a oportunidade de trabalhar com planilhas, mas o processo de manipulação delas era muito desgastante por ser repetitivo. Então, comecei a fazer pesquisas no YouTube e aos poucos consegui automatizar todas as planilhas da empresa. Não posso dizer que sou expert em Excel, mas tenho consciência do que o Excel é capaz de fazer e tenho um domínio muito avançado de suas ferramentas e um nível razoável em VBA. Por isso, me considero ótimo automatizando planilhas e processos. Desde então, venho me aprimorando e aplicando meus conhecimentos por onde passo. Já fiz alguns projetos importantes, como automatização de controle de estoque, processos gerenciais de chão de fábrica, controle de produção com apontamento, até mesmo em uma empresa de telefonia, onde criei um sistema em VBA que foi possível reduzir o tempo de atendimento de 7 minutos para 4 minutos, apenas reunindo as informações mais importantes de um cliente de vários sistemas diferentes em uma única página. Sempre me destaquei em todas as empresas em que já trabalhei por ser uma pessoa proativa, solucionadora de problemas, extremamente criativa e com uma bagagem de experiências enorme.</p>
+                <p>Fora do ambiente acadêmico e profissional, gosto de dedicar meu tempo dividindo entre um tempo de qualidade com a família e estudos, pois considero importante manter um equilíbrio saudável entre minha vida pessoal e profissional, buscando sempre aprender e crescer em ambos os aspectos.
+                </p>
+                <p>Estou otimista para continuar essa jornada, aplicar os conhecimentos adquiridos e enfrentar novos desafios no mercado de trabalho. Estou aberto a novas oportunidades e sempre disposto a aprender e crescer, tanto como profissional quanto como pessoa.
+                </p>
+                <p>Bom, essa apresentação é apenas um resumo da minha trajetória até aqui, e se você se interessou, faço um convite: entre em contato comigo, pois será um prazer compartilhar mais com você, e tenho certeza de que não irá se arrepender de me contratar.
+                </p>
+                <p>Agradeço por dedicar seu tempo para conhecer um pouco mais sobre mim e minha trajetória.</p>
+                <p>Atenciosamente,</p>
+                <p><strong></strong></p>
+                <p><strong>Murilo Medeiros Ferreira</strong> <br>Técnico em Eletronica. <br> Estudante de Análise e Desenvolvimento de Sistemas.</p>
+                <p></p>
+
+            
+
+        </section>
+        
+        <footer class="container"> <!--No rodapé criei um tag apenas para indicar que tem algo neste espaço para criação do rodapé, mas posso adicionar alementos aqui se quiser.-->           
+            <h4></h4>
+        </footer>
+        </div>
+    </body>
+    </html>

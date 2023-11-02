@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="PT BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Portfólio Pessoal: Minha Formção</title>
+     <!--Inicio da tag style onde defino que trabalharei com GRID-->
+     <style>
+        body{margin: 0;}
+        .container{display: grid;}/*Determina que o sistema de crição de layout que será utilizado é o GRID*/ 
+        header{grid-column-start: 1;grid-column-end: 12;background-color:#8c8c8c; font-family: Verdana, Geneva, Tahoma, sans-serif }/*Define O inicio e fim do GRID do meu Titulo da Pagina*/
+        .menu{grid-column-start: 6;grid-column-end: 12;justify-content: center; gap: 20px;}/*Posição e alinhamento do Menu*/ 
+        .img1{grid-column-start: 1;grid-column-end: 2;}/*Posição e allinhamento da foto*/
+        ul{list-style-type: none;color: black;}/*lista não ordenada com os links */
+        li{float: left; color: black;}/*Aqui determino que minha lista será em linha e centralizada n cor preta*/
+        a:link{text-decoration: none;padding: 8px 30px; font-size: 22px;}/*Aqui retirei a decoração da lista*/
+        footer{grid-column-start: 1;grid-column-end: 12;background-color:#8c8c8c}/*Definição de como será meu rodapé*/
+        .info{margin: 7px; font-size: 18px; color: black;}/*Alinhamento e estilização das minhas informações pessoais*/
+           /* media query para dispositivos móveis */
+           @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            ul{grid-column-start: 1;grid-column-end: 1;margin: 0;list-style-type: disc;}
+            li{grid-column-start: 1; grid-column-end: 1;margin: 0;text-align: justify;}
+                       
+        }
+        </style>
+</head>
+    <body>  
+        <!-- Cabeçalho da Pagina-->  
+        <header class="container wrapper">
+            <h1 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">Curriculo Vitae<br> Online</h1>
+        </header>
+        <!--Menu feito com lista não ordenada e em linha-->
+        <nav class="container menu wrapper">
+            <ul>
+                <li><a href="index.html">Quem Sou</a></li>
+                <li><a href="index2.html">Formação</a></li>
+                <li><a href="index1.html">Portfólio</a></li>
+                <li><a href="index3.html">Contatos</a></li>
+            </ul>
+        </nav>
+        <!--Criado uma div para definir que tudo que está nela faz parte do container-->
+        <div class="container wrapper">
+            <aside class="img1">
+                <img src="imagens/foto.jpg" width="240px" height="280px"> 
+                    <div class="info"> 
+                        <p><strong>Nome: </strong><br>Murilo Medeiros Ferreira</p>
+                        <p><strong>Sexo: </strong><br>Maculino</p>
+                        <p><strong>Data Nascimento:</strong><br>11/02/1988 (35 anos)</p> 
+                        <p><strong>Estado Civil:</strong><br> Casado</p>
+                        <p><strong>CEP:</strong><br>83050080 <br>São José dos Pinhais PR</p> 
+                    </div>                                    
+            </aside>
+                    
+        <section class="container wrapper">
+                <div>
+                    <h2 style="margin: 0;">Escolaridade</h2><br>
+                        <table>
+                            <th width="100px" style="text-align: left; font-size: 18px;">Data:</th>
+                            <th width="500" style="text-align: left;font-size: 18px;">Descrção:</th>
+                            <th width="400px" style="text-align: left; font-size: 18px;">Instituição:</th>
+                            <th style="text-align: left;font-size: 18px;">Status:</th>
+                            <tr>
+                                <td>2011</td>
+                                <td>Ensino Médio</td>
+                                <td>ENCCEJA</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>Técnico/Pós-Médio Incompleto - Técnico em eletrônica.</td>
+                                <td>CEEP PR</td>
+                                <td>Concluído</td>
+                            </tr> 
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Análise e Desenvolvimento de Sistemas</td>
+                                <td>UNINTER</td>
+                                <td>Cursando</td>
+                            </tr>
+                        </table>
+                    <h2>Outros Cursos</h2>
+                        <table>
+                            <th width="100px" style="text-align: left; font-size: 18px;">Data:</th>
+                            <th width="500" style="text-align: left;font-size: 18px;">Descrção:</th>
+                            <th width="400px" style="text-align: left; font-size: 18px;">Instituição:</th>
+                            <th style="text-align: left;font-size: 18px;">Status:</th>
+                            <tr>
+                                <td>2010</td>
+                                <td>Mecânica Básica Industrial</td>
+                                <td>SEDUC INTEC</td>
+                                <td>Concluído</td>
+                            </tr>    
+                            <tr>
+                                <td>2010</td>
+                                <td>Programador CNC</td>
+                                <td>SEDUC INTEC</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2017</td>
+                                <td>Portaria e Monitoramento</td>
+                                <td>VGT</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>Fundamentos do Lean Manufacturing</td>
+                                <td>SENAI PR</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Desenvolvimento Orientado a Objetos Utilizando a Linguagem Python</td>
+                                <td>FUNDAÇÃO BRADESCO</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Fundamentos de Lógica de Programação</td>
+                                <td>FUNDAÇÃO BRADESCO</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Introdução à Programação Orientada a Objetos (POO)</td>
+                                <td>FUNDAÇÃO BRADESCO</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Linguagem de Programação Python - Básico</td>
+                                <td>FUNDAÇÃO BRADESCO</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Criando um Projeto com Interface Gráfica Utilizando a Linguagem Python</td>
+                                <td>FUNDAÇÃO BRADESCO</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Inglês</td>
+                                <td>UNINTER</td>
+                                <td>Cursando</td>
+                            </tr>                             
+                        </table>
+                </div>            
+        </section>
+        
+        <footer class="container">            
+            <h4></h4>
+        </footer>
+        </div>
+    </body>
+    </html>
